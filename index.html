@@ -1,78 +1,13 @@
 <!DOCTYPE html>
-<link type="text/css" href="css/primary.css" rel="stylesheet" >
+
+<link type="text/css" href="css/primary.css" rel="stylesheet">
+
 <html>
-<head>
-	<title> Tallen's Server</title>
-</head>
-<body style="background-color: #272a2c" onload="loadHome(), loadComingSoon(100), changeURL(home)">
-	<button onclick="toggleSideBar()" id="toggleSideBar" class="toggleSideBarButton">
-		<img src="./img/showBar.svg" class="showBarThreeLines">
-	</button>
-	<div class="headerBar">
-		<p style="color: white; left: 14px; font-size: 33px; top: -35px; position: absolute;"><u>Tallen's Website</u></p>
-	</div>
-	<div class="scrollBar">
-		<div class="scrollBarFill"  id="scrollBarFill"></div>
-	</div>
-	<!--Home Button
-	<a href="http://computerbytes.duckdns.org">
-	<div class="home-button" title="Home">
-		<img src="./img/home.svg" class="home-button-image">
-	</div>
-	</a>-->
+	<head>
+	<title>ZINC Studios</title>
+	</head>
+	<body style="background-color: #272a2c">
+		
+	</body>
 
-	<!--Socials in a flex container-->
-	<div class="flex-container">
-		<div class="flex-item" title="Visit my YouTube channel">
-			<a href="https://www.youtube.com/channel/UCNq6PLdcdN03pP_NHyN5eyA" target="_blank">
-				<img src="./img/youtube.svg" style="width: 100%">
-			</a>
-		</div>
-		<div class="flex-item" title="Play my games at itch.io">
-			<a href="https://talleeenos69.itch.io/" target="_blank">
-				<img src="./img/itch.svg" style="width: 100%">
-			</a>
-		</div>
-		<div class="flex-item" title="See more projects on Github">
-			<a href="https://github.com/Talleeenos69" target="_blank">
-				<img src="./img/github.svg" style="width: 100%; ">
-			</a>
-		</div>
-		<div class="flex-item" title="Ask questions or answer mine on Stackoverflow">
-			<a href="https://stackoverflow.com/users/21269564/talleeenos69" target="_blank">
-				<img src="./img/stackOverflow.png" style="width: 100%">
-			</a>
-		</div>
-	</div>
-
-	<div class="side-bar-socials"></div>
-
-	<!--Side Bar div-->
-	<div class="side-bar" id="side-bar">
-		<!--Add new News sections by copying and pasting the <div>s-->
-		<div class="news-wrapper">
-			<div class="news-container">
-				<div class="news-content" onclick="mc()" style="cursor: pointer;">Join GL Minecraft Server &#9935; </div>
-				<div class="news-content" onclick="comClub()" style="cursor: pointer;"> Join Computer Club &#128104;&zwj;&#128187; </div>
-				<div class="news-content" onclick="donate()" style="cursor: pointer;"> Donate &#128184;&#128176;&#128178; </div>
-				<div class="news-content" onclick="contribute()" style="cursor: pointer;"> Contribute &#129309; </div>
-				<div class="news-content" onclick="about()" style="cursor: pointer;"> About &#10067; </div>
-				<div class="news-content" onclick="news()" style="cursor: pointer;"> Tech News! &#9881; </div>
-				<div class="news-content" style="cursor: pointer;"> Coming Soon! &#x1F6A7; </div>
-			</div>	 
-		</div> 
-	</div>
-	<!--Embed html files into the website's content section-->
-	<div class="iframe-wrapper" id="iframe-wrapper">
-		<iframe id="iFrame" class="iframe-embed" frameBorder="0"></iframe>
-	</div>
-
-	<!--JavaScripts-->
-	<script src="./js/changeURL.js"></script>
-	<script src="./js/loadComingSoonDivs.js"></script>
-	<script src="./js/scrollbar.js"></script>	
-	<script src="./js/hideSideBar.js"></script>
-	<script src="./js/changeIframeContent.js"></script>
-	<script src="./js/changeIframeWidth.js"></script>
-</body>
 </html>
