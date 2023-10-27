@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Change background color to white for the light theme */
+    color: #000; /* Change text color to black for the light theme */
+    margin: 0;
+    padding: 0;
+}
+
+.about-me {
+    padding: 0 18px;
+    background-color: #fff; /* Change background color to white for the light theme */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+header {
+    background-color: #f0f0f0; /* Change background color to a light gray color */
+    color: #000; /* Change text color to black for the light theme */
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid #ddd; /* Adjust the border thickness and color */
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.content {
+    background-color: #f0f0f0; /* Change background color to a light gray color */
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #ddd; /* Adjust the border thickness and color */
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    margin-top: -33px;
+    padding: 2rem;
+    padding-top: 5px;
+    background-color: #fff; /* Change background color to white for the light theme */
+    border: 1px solid #ddd; /* Adjust the border thickness and color */
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #000; /* Change text color to black for the light theme */
+}
+
+.container-header {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #f0f0f0; /* Change background color to a light gray color */
+    border: 1px solid #ddd; /* Adjust the border thickness and color */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #000; /* Change text color to black for the light theme */
+}
+
+.profile-picture {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    margin-top: -15px;
+    border-radius: 20px;
+}
+
+.username {
+    display: inline-block;
+    color: #000; /* Change text color to black for the light theme */
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000; /* Change text color to black for the light theme */
+}
+
+h3 {
+    color: #000; /* Change text color to black for the light theme */
+}
+
+h4 {
+    color: #000; /* Change text color to black for the light theme */
+}
+
+p {
+    line-height: 1.6;
+}
+
+.project {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f0f0f0; /* Change background color to a light gray color */
+    color: #000; /* Change text color to black for the light theme */
+    border: 1px solid #ddd; /* Adjust the border thickness and color */
+    border-radius: 5px;
+}
+
+footer {
+    border-top: 1px solid #ddd; /* Adjust the border thickness and color */
+    background-color: #fff; /* Change background color to white for the light theme */
+    color: #000; /* Change text color to black for the light theme */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.mode-switcher {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+}
+
+.clear {
+    clear: both;
+}
+
+.checkBox {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: 3px solid rgba(0, 0, 0, 0); /* Change border color to black for the light theme */
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px #000; /* Change box shadow color to black for the light theme */
+}
+
+.checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: #000; /* Change background color to black for the light theme */
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+}
+
+.checkBox input[type=checkbox]:checked + div {
+    left: -10px;
+    top: -10px;
+}
+
+.checkBox input[type=checkbox] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+}
+
+.transition {
+    transition: 300ms ease;
+}
