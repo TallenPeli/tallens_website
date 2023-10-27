@@ -4,6 +4,7 @@ body {
     color: #000; /* Change text color to black for the light theme */
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .about-me {
@@ -12,6 +13,7 @@ body {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 header {
@@ -20,10 +22,12 @@ header {
     text-align: center;
     padding: 2rem;
     border-bottom: 1px solid #ddd; /* Adjust the border thickness and color */
+    transition: background-color 0.5s, color 0.5s;
 }
 
 h1 {
     font-size: 2rem;
+    transition: color 0.5s;
 }
 
 .content {
@@ -35,6 +39,7 @@ h1 {
     transition: max-height 0.2s ease-out;
     border: 1px solid #ddd; /* Adjust the border thickness and color */
     border-radius: 10px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .container {
@@ -48,6 +53,7 @@ h1 {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     color: #000; /* Change text color to black for the light theme */
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .container-header {
@@ -60,6 +66,7 @@ h1 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     color: #000; /* Change text color to black for the light theme */
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .profile-picture {
@@ -73,23 +80,28 @@ h1 {
 .username {
     display: inline-block;
     color: #000; /* Change text color to black for the light theme */
+    transition: color 0.5s;
 }
 
 h2 {
     font-size: 1.5rem;
     color: #000; /* Change text color to black for the light theme */
+    transition: color 0.5s;
 }
 
 h3 {
     color: #000; /* Change text color to black for the light theme */
+    transition: color 0.5s;
 }
 
 h4 {
     color: #000; /* Change text color to black for the light theme */
+    transition: color 0.5s;
 }
 
 p {
     line-height: 1.6;
+    transition: color 0.5s;
 }
 
 .project {
@@ -99,6 +111,7 @@ p {
     color: #000; /* Change text color to black for the light theme */
     border: 1px solid #ddd; /* Adjust the border thickness and color */
     border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 footer {
@@ -107,52 +120,67 @@ footer {
     color: #000; /* Change text color to black for the light theme */
     text-align: center;
     padding: 1rem 0;
+    transition: background-color 0.5s, color 0.5s;
 }
 
-.mode-switcher {
+/* The switch - the box around the slider */
+.switch {
+    display: block;
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /* size of sliding icon -- sun and moon */
+    --size-of-icon: 1.4em;
+    /* it is like a inline-padding of switch */
+    --slider-offset: 0.3em;
     position: fixed;
     left: 30px;
-    bottom: 30px;
-}
-
-.clear {
-    clear: both;
-}
-
-.checkBox {
-    display: block;
+    bottom: 50px;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-    border: 3px solid rgba(0, 0, 0, 0); /* Change border color to black for the light theme */
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0px 0px 0px 2px #000; /* Change box shadow color to black for the light theme */
-}
-
-.checkBox div {
-    width: 60px;
-    height: 60px;
-    background-color: #000; /* Change background color to black for the light theme */
-    top: -52px;
-    left: -52px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+.slider:before {
     position: absolute;
-    transform: rotateZ(45deg);
-    z-index: 100;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: orange;
+    transition: .4s;
 }
-
-.checkBox input[type=checkbox]:checked + div {
-    left: -10px;
-    top: -10px;
-}
-
-.checkBox input[type=checkbox] {
-    position: absolute;
-    left: 50px;
-    visibility: hidden;
-}
-
-.transition {
-    transition: 300ms ease;
-}
+  
+  input:checked + .slider {
+    background-color: #161b22;
+    border: 0.1px solid #79858d;
+  }
+  
+  input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #161b22;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #00a3ff;
+  }

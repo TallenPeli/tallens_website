@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="css/light-theme.css" as="style" />
     <link id="theme-stylesheet" rel="stylesheet" href="css/dark-theme.css">
     <title>Talleeenos69 - Portfolio</title>
 </head>
@@ -17,12 +18,10 @@
         <h2>About Me</h2>
     </div>
 
-    <div class="mode-switcher">
-        <label class="checkBox">
-          <input id="ch1" type="checkbox" onchange="toggleTheme()">
-          <div class="transition"></div>
-        </label>
-    </div>
+    <label class="switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+    </label>
 
     <div class="container">
         <div class="content">
@@ -39,7 +38,7 @@
                 Whether you require a developer skilled in low-level systems, high-level applications, or data-driven solutions, my diverse skill set and the contributions I've made to the programming world through 'Zinc' make me an invaluable asset to any project or team.
             </p>
 
-            <h4>Githib profile : <a href="https://github.com/Talleeenos69" target="_blank">https://github.com/Talleeenos69</a></h4>
+            <h4>Github profile : <a href="https://github.com/Talleeenos69" target="_blank">https://github.com/Talleeenos69</a></h4>
         </div>
 
         <h2>Projects</h2>
@@ -79,7 +78,7 @@
     </div>
 
     <footer>
-        &copy; 2023 <a href="https://github.com/Talleeenos69" style="color: white;" target="_blank">Talleeenos69</a>
+        &copy; 2023 <a href="https://github.com/Talleeenos69" target="_blank">Talleeenos69</a>
     </footer>
 
     <script>
