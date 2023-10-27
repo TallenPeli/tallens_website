@@ -12,6 +12,14 @@
             padding: 0;
         }
 
+        .about-me {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
         header {
             background-color: #010409;
             color: #fff;
@@ -22,6 +30,32 @@
 
         h1 {
             font-size: 2rem;
+        }
+
+        .collapsible {
+            margin-top: 11px;
+            padding-left: 15px;
+            background-color: #161b22;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 20px;
+            border: 0.1px solid #79858d;
+            border-radius: 10px;
+        }
+
+        .content {
+            padding-left: 30px;
+            padding-right: 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            border: 0.1px solid #79858d;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
         }
 
         .container {
@@ -91,6 +125,7 @@
             text-align: center;
             padding: 1rem 0;
         }
+
     </style>
 </head>
 <body>
@@ -104,19 +139,21 @@
         <h2>About Me</h2>
     </div>
     <div class="container">
-      <p>
-      I am an accomplished software developer with a notable achievement in the creation of the 'Zinc' programming language. My core expertise primarily centers around low-level programming, where I excel in crafting efficient and optimized code that interfaces closely with hardware. However, I also maintain proficiency in a wide array of programming languages, including Python, HTML, CSS, JavaScript, Java, Kotlin, C++, C, and C#.
-      </p>
-      <p>
-      In addition to low-level programming, I possess a strong command of high-level languages, which provides me with the versatility to tackle a broad spectrum of projects. I am equally comfortable developing web applications using Python, HTML, CSS, and JavaScript, as well as creating robust and scalable software solutions in Java, Kotlin, C++, C, and C#.
-      </p>
-      <p>
-      My unwavering passion lies in data analysis and manipulation. I relish the challenge of working with extensive datasets and designing intricate algorithms to extract valuable insights. My ability to transition seamlessly between different programming paradigms allows me to create powerful tools and applications for data processing and manipulation.
-      </p>
-      <p>
-      Whether you require a developer skilled in low-level systems, high-level applications, or data-driven solutions, my diverse skill set and contributions to the programming world through 'Zinc' make me an invaluable asset to any project or team.
-      </p>
-    
+        <button type="button" class="collapsible"><h3>Read about me</h3></button>
+        <div class="content">
+            <p>
+            I am an accomplished software developer with a notable achievement in the creation of the 'Zinc' programming language. My core expertise primarily centers around low-level programming, where I excel in crafting efficient and optimized code that interfaces closely with hardware. However, I also maintain proficiency in a wide array of programming languages, including Python, HTML, CSS, JavaScript, Java, Kotlin, C++, C, and C#.
+            </p>
+            <p>
+            In addition to low-level programming, I possess a strong command of high-level languages, which provides me with the versatility to tackle a broad spectrum of projects. I am equally comfortable developing web applications using Python, HTML, CSS, and JavaScript, as well as creating robust and scalable software solutions in Java, Kotlin, C++, C, and C#.
+            </p>
+            <p>
+            My unwavering passion lies in data analysis and manipulation. I relish the challenge of working with extensive datasets and designing intricate algorithms to extract valuable insights. My ability to transition seamlessly between different programming paradigms allows me to create powerful tools and applications for data processing and manipulation.
+            </p>
+            <p>
+            Whether you require a developer skilled in low-level systems, high-level applications, or data-driven solutions, my diverse skill set and contributions to the programming world through 'Zinc' make me an invaluable asset to any project or team.
+            </p>
+        </div>
 
         <h2>Projects</h2>
 
@@ -187,4 +224,21 @@
         &copy; 2023 <a href="https://github.com/Talleeenos69" style="color: white;" target="_blank">Talleeenos69</a>
     </footer>
 </body>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+
+                if (content.style.maxHeight){
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </html>
