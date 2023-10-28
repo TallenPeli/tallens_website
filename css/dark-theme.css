@@ -6,6 +6,11 @@ body {
     transition: background-color 0.5s, color 0.5s;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .about-me {
     padding: 0 18px;
     background-color: white;
@@ -189,9 +194,10 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     margin: 0vmin;
+    margin-left: -15px;
     overflow: hidden;
     transform: skew(5deg);
-    width: 99%;
+    width: 120%;
   
 .card {
       flex: 1;
@@ -212,7 +218,7 @@ input:checked + .slider:before {
     }
   
       &:hover {
-        flex-grow: 4;
+        flex-grow: 8;
         img {
           filter: blur(0px);
         }
@@ -222,9 +228,9 @@ input:checked + .slider:before {
         height: 100%;
         object-fit: cover;
         transition: all 1s ease-in-out;
-        filter: blur(2px)
+        filter: blur(1px)
       }
-      &:not(:nth-child(7)) {
+      &:not(:nth-child(8)) {
         margin-right: 0.5em;
       }
     }
