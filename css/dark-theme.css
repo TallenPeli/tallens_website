@@ -133,6 +133,15 @@ footer {
     padding: 1rem 0;
     transition: background-color 0.5s, color 0.5s;
 }
+
+.link {
+    color: #2b68bf;
+}
+
+.git-repo-link {
+    color: white;
+}
+
 /* The switch - the box around the slider */
 .switch {
     display: block;
