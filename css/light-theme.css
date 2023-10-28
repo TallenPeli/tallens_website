@@ -8,6 +8,11 @@ body {
     /*hello*/
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .about-me {
     padding: 0 18px;
     background-color: #fff; /* Change background color to white for the light theme */
