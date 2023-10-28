@@ -1,5 +1,9 @@
+@font-face {
+    font-family: 'SCP';
+    src: url('../fonts/source-code-pro/SourceCodePro-Regular.ttf') format('truetype');
+}
+
 body {
-    font-family: Arial, sans-serif;
     background-color: #0d1117;
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ body {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: 'SCP', sans-serif;
 }
 
 .about-me {
@@ -107,6 +112,7 @@ h4 {
 p {
     line-height: 1.6;
     transition: color 0.5s;
+    font-size: 15px;
 }
 
 .project {
