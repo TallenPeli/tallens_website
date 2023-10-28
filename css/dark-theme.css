@@ -22,6 +22,7 @@ header {
     padding: 2rem;
     border-bottom: 0.1px solid #79858d; /* Adjust the border thickness here */
     transition: background-color 0.5s, color 0.5s;
+    right: 0px;
 }
 
 h1 {
@@ -183,24 +184,24 @@ input:checked + .slider:before {
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #00a3ff;
 }  
  
-  .cat-container {
+.cat-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10vmin;
+    margin: 0vmin;
     overflow: hidden;
     transform: skew(5deg);
+    width: 99%;
   
-    .card {
+.card {
       flex: 1;
       transition: all 1s ease-in-out;
-      height: 75vmin;
+      height: 30vmin;
       position: relative;
       .card__head {
         color: black;
-        background: rgba(255, 30, 173, 0.75);
+        background: #79858d;
         padding: 0.5em;
-        transform: rotate(-90deg);
         transform-origin: 0% 0%;
         transition: all 0.5s ease-in-out;
         min-width: 100%;
@@ -208,22 +209,12 @@ input:checked + .slider:before {
         position: absolute;
         bottom: 0;
         left: 0;
-        font-size: 1em;
-        white-space: nowrap;
-      }
+    }
   
       &:hover {
-        flex-grow: 10;
+        flex-grow: 4;
         img {
-          filter: grayscale(0);
-        }
-        .card__head {
-          text-align: center;
-          top: calc(100% - 2em);
-          color: white;
-          background: rgba(0, 0, 0, 0.5);
-          font-size: 2em;
-          transform: rotate(0deg) skew(-5deg);
+          filter: blur(0px);
         }
       }
       img {
@@ -231,11 +222,10 @@ input:checked + .slider:before {
         height: 100%;
         object-fit: cover;
         transition: all 1s ease-in-out;
-        filter: grayscale(100%);
+        filter: blur(2px)
       }
-      &:not(:nth-child(5)) {
-        margin-right: 1em;
+      &:not(:nth-child(7)) {
+        margin-right: 0.5em;
       }
     }
   }
-/*Hello*/
