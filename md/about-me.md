@@ -1,3 +1,3 @@
 # About Me
 
-My name is Tallen, 
+**My name is Tallen,**
