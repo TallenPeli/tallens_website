@@ -24,6 +24,14 @@ html, body {
     transition: max-height 0.2s ease-out, background-color 0.5s, color 0.5s;
 }
 
+strong {
+    color: white;
+}
+
+a {
+    color: #2f81f7;
+}
+
 header {
     background-color: #010409;
     color: #fff;
@@ -114,8 +122,11 @@ p {
 }
 
 .project {
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
     margin: 1rem 0;
-    padding: 1rem;
     background-color: #161b22;
     color: #79858d;
     border: 0.1px solid #79858d;

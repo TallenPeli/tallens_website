@@ -1,5 +1,5 @@
 # ZINC Programming Language
-## Zero-cost INtegrated C++
+### Zero-cost INtegrated C++
 
 ZINC is a programming language developed in C++ and C, designed to deliver equivalent, if not enhanced, functionality compared to these languages. The primary goals of ZINC include improved code comprehension and accelerated development speed.
 

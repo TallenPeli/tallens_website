@@ -1,6 +1,6 @@
 # ZINC-VSCode-Language_Support
 
-## ZINC-VSCode-Extension
+### ZINC-VSCode-Extension
 
 Extension for ZINC in VSCode
 
