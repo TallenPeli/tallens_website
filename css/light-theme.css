@@ -25,6 +25,10 @@ html, body {
     transition: max-height 0.2s ease-out, background-color 0.5s, color 0.5s;
 }
 
+a {
+    color: #2f81f7;
+}
+
 header {
     background-color: #f0f0f0;
     color: #000;
@@ -115,7 +119,10 @@ p {
 
 .project {
     margin: 1rem 0;
-    padding: 1rem;
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
     background-color: #f0f0f0;
     color: #000;
     border: 1px solid #ddd;
