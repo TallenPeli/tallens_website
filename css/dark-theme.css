@@ -217,7 +217,7 @@ input:checked + .slider:before {
     margin: 0vmin;
     margin-left: -15px;
     overflow: hidden;
-    transform: skew(5deg);
+    transform: skew(2deg);
     width: 120%;
 }
 
