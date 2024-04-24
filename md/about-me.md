@@ -1,7 +1,22 @@
-I am a High School student planning on getting into Mechatronics Engineering. I love learning new things and challenging myself. I program in a variety of languages including C, C++, HTML/CSS, JavaScript, Python, and Bash/Shell. I lean towards using C++ as my main programming language. 
+My name is Tallen Pelissero. I am a High School student at Great Lakes Christian High School. I enjoy programming in many different programming languages, and continue to learn every day. I am proficient in high and low level programming - from python to C.
 
-- Student at GLCHS
+Many of my friends call me "Linux", due to my obsession with the operating system shown by my habit of compiling custom kernels.
 
-- C++ Developer
+I like to consider myself a perfectionist. If something isn't working exactly how it should, I'll invest my time into ensuring that the issue is entirely resolved.
 
-- Long-time Linux user
+Here is a list of programming languages that I know well :
+
+- Rust
+- C
+- C#
+- C++
+- Python
+- HTML/CSS
+- Shell
+- JavaScript
+
+Here are some languages that I am interested in learning :
+
+- Java/Kotlin
+- Go
+- Assembly
